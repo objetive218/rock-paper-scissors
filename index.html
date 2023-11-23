@@ -42,7 +42,7 @@ function game(){
     let player = 0;
     let computer = 0;
     let contador = 0;
-  while(contador < 5){
+  while(contador < 6){
     let playerSelection = prompt("Rock, paper, or Scissors?");
     let computerSelection = getComputerChoice();
     let a = playRound(playerSelection, computerSelection);
@@ -54,9 +54,9 @@ function game(){
         computer += 1;
         contador += 1;
     }
-    console.log(player,computer)
+    console.log(` player: ${player}  - computer: ${computer}`);
   };
-  return player = 5 ? console.log("player win") : console.log("computer win");
+  return player >= 3 ? console.log("player win") : console.log("computer win");
 }
 
 
