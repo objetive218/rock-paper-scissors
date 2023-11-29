@@ -40,13 +40,14 @@ let computer = 0;
         const btn1= document.querySelector("#paper");
         const btn2= document.querySelector("#scissors");
         const btn3= document.querySelector("#rock");
-        const container = document.querySelector(".container");
+        const container = document.querySelector("#table");
         const result = document.createElement("div");
+        result.id = "result"
         container.appendChild(result);
         
         
         const newGame = function(e){
-          let a = e.target.value;
+          let a = e.target.id;
             result.textContent = (` ${playRound(a, getComputerChoice())} player: ${player}  - computer: ${computer} `);
             console.log(player,computer)
           if(player === 5){
