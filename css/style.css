@@ -11,6 +11,11 @@
     padding: 74px;
     gap: 1rem;
 }
+span{
+    border: solid blue 1px;
+    padding: 10px;
+    border-radius: 30px;
+}
 .container #paper{
     flex: 1;
 }

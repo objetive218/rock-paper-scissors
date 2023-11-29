@@ -48,7 +48,7 @@ let computer = 0;
         
         const newGame = function(e){
           let a = e.target.id;
-            result.textContent = (` ${playRound(a, getComputerChoice())} player: ${player}  - computer: ${computer} `);
+            result.textContent = (` ${playRound(a, getComputerChoice())} Player:  ${player}  - Computer:  ${computer} `);
             console.log(player,computer)
           if(player === 5){
             result.textContent = "Player win!";
